@@ -15,5 +15,4 @@
   <li>JavaScript.</li>
 </ul>
 
-<img src=".github/fundomobilelight.png">
-
+<p align="center"><img src=".github/fundomobilelight.png"></p>

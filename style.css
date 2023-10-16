@@ -9,7 +9,7 @@
 /* SWITCH */
 :root  {
     --text-color: white;
-    --bg-url: url(./assets/assets/fundo2.png);
+    --bg-url: url(./assets/assets/fundomobiledark.png);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color:  rgba(255, 255, 255, 0.1);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -19,7 +19,7 @@
 
 .light {
     --text-color: black;
-    --bg-url: url(./assets/assets/fundo.png);
+    --bg-url: url(./assets/assets/fundomobile-light.png);
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(12, 41, 41, 0.4);
@@ -77,6 +77,7 @@ body {
 
     /* Short-hand: Background: color image repeat position/size */
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 .container {
@@ -167,4 +168,15 @@ ul li a:hover {
 footer {
     text-align: center;
     padding: 24px 0;
+}
+
+/* Media queries */
+@media (min-width: 700px){
+    :root {
+        --bg-url: url(./assets/assets/fundo2.png);
+    }
+    
+    .light {
+        --bg-url: url(./assets/assets/fundo.png);
+    }
 }
