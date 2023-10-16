@@ -15,5 +15,5 @@
   <li>JavaScript.</li>
 </ul>
 
-<img src=".github/projetorocketseat2.png">
+<img src=".github/fundomobilelight.png">
 
