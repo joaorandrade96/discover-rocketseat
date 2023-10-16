@@ -44,7 +44,16 @@
     z-index: 1;
     top: 0;
     left: 0;
-    transform: translateY(-10%)
+    transform: translateY(-10%);
+    animation: slide-out 0.5s;
+}
+
+.light #switch button {
+    animation: slide-in 0.5s forwards;
+}
+
+#switch button:hover {
+    outline: 8px solid var(--high-light-color);
 }
 
 #switch span {
@@ -57,14 +66,6 @@
     --webkit-backdrop-filter: blur(4px);
     border-radius: 9999px;
 }
-
-.light #switch button {
-    right: 0;
-    left: initial;
-}
-
-
-
 /* SWITCH */
 
 body {
@@ -171,12 +172,30 @@ footer {
 }
 
 /* Media queries */
-@media (min-width: 700px){
+@media (min-width: 700px) {
     :root {
         --bg-url: url(./assets/assets/fundo2.png);
     }
-    
     .light {
         --bg-url: url(./assets/assets/fundo.png);
+    }
+}
+
+/* animation */
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
     }
 }
