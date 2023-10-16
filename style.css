@@ -9,7 +9,7 @@
 /* SWITCH */
 :root  {
     --text-color: white;
-    --bg-url: url(./assets/assets/fundomobiledark.png);
+    --bg-url: url(./assets/assets/fundomobile-dark.png);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color:  rgba(255, 255, 255, 0.1);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
